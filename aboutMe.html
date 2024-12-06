@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>About Me page</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="textStyle.css" type="text/css">
+    
+</head>
+
+<a href="academics.html" class="nextPage">&#8594;</a>
+<a href="home.html" class="backPage">&#8592;</a>
+
+<body class="aboutMeBody">
+    <!--Clock element-->
+    <div id="clock" title="click to change">00:00:00</div>
+
+
+    <button class="openForm" onclick="openForm()" id="openForm">Open Form</button>
+    <button class="closeForm" onclick="closeForm()"id="closeForm">Close Form</button>
+
+    <div class="sideForm" id="formID">
+    <form id="demoForm">
+
+        <legend><strong>Demographics</strong></legend>
+        <table class="form-table" border="1">
+            <tr>
+                <td>
+                    Name:
+                </td>   
+                <td>
+                    <input type="text" name="demographics"id="name" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td>
+                    <input type="number" name="demographics" id="age" max="100" required>
+                </td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" name="gender" id="MaleGender" value="Male" checked>
+                    <label>Male</label>
+                    <input type="radio" name="gender" id="FemaleGender" value="Female">
+                    <label>Female</label>
+                </td>
+            </tr>
+            <tr>
+                <td>Page Rating</td>
+                <td>
+                    <select name="pageRate" id="pageRate" size="1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" name="send" value="Submit" id="submit" class="submit">
+                </td>
+                <td><buttonname="previousData" id="pData" onclick="previousData()" class="pData">Previous Data</button></td>
+            </tr>
+        </table>
+
+    </form>
+</div>
+
+<div class="confirm" id="confirm">
+    <table border="1" class="confirmTable">
+        <tr>
+            <th colspan="2">Is this information correct?</th>
+        </tr>
+
+        <tr>
+            <td>Name:</td>
+            <td><span id="confirmName"></span></td>
+        </tr>
+
+        <tr>
+            <td>Age:</td>
+            <td><span id="confirmAge"></span></td>
+        </tr>
+
+        <tr>
+            <td>Gender:</td>
+            <td><span id="confirmGender"></span></td>
+        </tr>
+
+        <tr>
+            <td>Page Rating:</td>
+            <td><span id="confirmPageRate"></span></td>
+        </tr>
+
+        <tr>
+            <td><button id="confirmYes">Yes</button></td>
+            <td><button id="confirmNo">No</button></td>
+        </tr>
+    </table>
+</div>
+
+<div class="display" id="display">
+    <table border="1" class="displayTable">
+        
+
+        <tr>
+            <td>Name:</td>
+            <td><span id="displayName"></span></td>
+        </tr>
+
+        <tr>
+            <td>Age:</td>
+            <td><span id="displayAge"></span></td>
+        </tr>
+
+        <tr>
+            <td>Gender:</td>
+            <td><span id="displayGender"></span></td>
+        </tr>
+
+        <tr>
+            <td>Page Rating:</td>
+            <td><span id="displayPageRate"></span></td>
+        </tr>
+
+    </table>
+</div>
+
+    <button onclick="topPage()" id="button" class="button" title="Go to top">Top</button>
+
+    <table class="header-table">
+        <tr>
+            <th colspan="5"><h1><a href="home.html">Chance Spreitzer</a></h1></th>
+        </tr>
+        <tr>
+            <th> <a href="home.html">Home</a></th>
+            <th><a href="aboutMe.html">About Me</a></th>
+            <th><a href="academics.html">Academics</a></th>
+            <th><a href="hobby.html">Hobbies</a></th>
+            <th><a href="contactPage.html">Contact</a></th>
+        </tr>
+    </table>
+
+    
+
+    <table class="aboutMe">
+        <tr>
+            <th colspan="3"><h1>Residency</h1></th>
+        </tr>
+        <tr>
+            <td><a href="https://www.algonquin.org/" target="_blank" class="images"><img src="algImg.jpg" 
+                width="400" height="250" alt="Algonquin Sign"></a></td>
+            <td>
+                <p>
+                    I was born and raised in Algonquin Illinois. I lived there for 20 years of my life. It was a great place not too 
+                far from the city and not too far from the country. My favorite part about Algonquin is the Fox River. It is a 
+                great fishing spot especially for smallmouth bass. If you or anyone you know were to go there I would recommend
+                going to Riverbottom Ice Cream. They are local business and it tastes great.
+                </p>
+            </td>
+            <td ><a href="https://www.algonquin.org/" target="_blank" class="images"><img src="dtAlg.jpg" 
+                width="400" height="250" alt="Downtown Algonquin"></a></td>
+        </tr>
+
+        <tr>
+            <td><a href="https://www.belvidereil.gov/" target="_blank" class="images"><img src="belvidereImg.png"
+                width="400" height="250" alt="Belvidere Sign"></a></td>
+            <td> 
+                <p>
+                    I recently moved to Belvidere Illinois this summer. It is just to the east of Rockford so there is plenty to do. 
+                    It is a much older looking town but once you get to know the place it is pretty nice. The roads are very fun to drive 
+                    as most of them are just cruising through the countryside. I would reccomend going to the Apollo Theatre if there is a 
+                    concert when you are there. It is a great music venue and right outside is the Kishwaukee river.
+                    
+                </p>
+            </td>
+            <td><a href="https://www.belvidereil.gov/" target="_blank" class="images"><img src="belvidereDT.jpeg" 
+                width="400" height="250" alt="Downtown Belvidere"></a></td>
+        </tr>
+
+        <tr>
+            <td><a href="https://www.explorecarbondale.com/" target="_blank" class="images"><img src="carbondaleImg.jpg" 
+                width="400" height="250" alt="Carbondale Sign"></a></td>
+            <td> 
+                <p>
+                I now am living in Carbondale just off the Southern Illinois Campus. I came to Carbondale because of all the great things
+                I have heard about southern Illinois. From my short stay so far I can say this place lives up to expectations and some.
+                The nature here is amazing, it doesn't even feel like I am in Illinois anymore. The mountains and trails are very beautiful.
+                There is so much to explore here that I am sure you can always find something to do.
+                </p>
+            </td>
+            <td><a href="https://www.explorecarbondale.com/" target="_blank" class="images"><img src="carbondaleIll.webp" 
+                width="400" height="250" alt="Carbondale overview"></a></td>
+        </tr>
+    </table>
+
+    <table class="goals">
+        <tr>
+            <td colspan="2"><h1>Goals</h1></td>
+        </tr>
+
+        <tr>
+            <td>
+                Personal Goals
+            </td>
+            <td>
+                One of my biggest goals growing up was to own a bass boat. More specifically I want to have a 
+                <a href="https://www.nitro.com/bass/z19-pro.html" class="boat" target="_blank">Nitro with a 200 Mercury</a>
+                on the back. Now once I get a real job I want to be able to 
+                afford that, but I also want to have a wife and kids one day so hopefully if I keep at it like 
+                I have been everything will go to plan.
+            </td>
+        </tr>
+
+        <tr>
+            <td>Academic Goals</td>
+            <td>I have always been a decent student but I never really enjoyed school since most of the information wasn't 
+                interesting to me. Now that I found a major that I am interested in, I'm able to appreciate school a lot more.
+                I now have goals of wanting to get in and out of college in four years with a bachelors degree in computer science.
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>Career Goals</td>
+            <td>When I get out of school I hope to find a good job that appreciates my work. I hope to make a good wage and work
+                my way up in the company. This will just be the start for me since my real goal is to create my own business in 
+                a field of computer science, whether that be in software engineering or in app development. 
+            </td>
+        </tr>
+    </table>
+
+    <table border="1" class="employmentSection">
+        <tr>
+            <th colspan="3"><h1>Employment</h1></th>
+        </tr>
+        
+        <tr>
+            <th>Company</th>
+            <th>Job Title</th>
+            <th>Time employed</th>
+        </tr>
+
+        <tr>
+            <td style="color: blue;" class="textStyle"><a href="https://www.walmart.com/">Walmart Pharmacy</a></td>
+            <td>Pharmacy Technician</td>
+            <td>January 2023 - August 2024</td>
+        </tr>
+
+        <tr>
+            <td style="color: rgb(80, 188, 255);" class="textStyle"><a href="https://www.homecityice.com/">Home City Ice</a></td>
+            <td>Production Worker</td>
+            <td>June 2022 - November 2022</td>
+        </tr>
+
+        <tr>
+            <td style="color: red;" class="textStyle"><a href="https://www.jewelosco.com/">Jewel-Osco</a></td>
+            <td>Deli Clerk</td>
+            <td>November 2021 - May 2022</td>
+        </tr>
+    </table>
+    <div class="emptySpace"></div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
